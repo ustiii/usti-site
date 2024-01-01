@@ -1,0 +1,261 @@
+.body {
+  width: 100%;
+  height: 100%;
+}
+* {
+  font-family: "Space Grotesk", sans-serif;
+  margin: 0;
+}
+
+.header {
+  &__box {
+    display: flex;
+    height: 150px;
+    background-color: white;
+  }
+  &__block {
+    background-color: blue;
+    width: 25px;
+    height: 25px;
+    border: 0;
+    border-radius: 6px;
+  }
+  &__logo {
+    display: flex;
+    // flex-wrap: wrap;
+    height: 100%;
+    width: 700px;
+    align-items: center;
+    margin-left: 25px;
+  }
+  &__name {
+    margin-left: 15px;
+  }
+  &__profession {
+    margin-left: 15px;
+  }
+  &__button-me {
+    color: blue;
+    text-decoration: none;
+  }
+  &__button {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+  }
+  &__button-info {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.site {
+  &__box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  &__block-color {
+    display: flex;
+    height: 600px;
+    width: 40%;
+    background-color: rgb(238, 211, 162);
+  }
+}
+
+.footer {
+  &__block {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    // background-color: red;
+  }
+  &__age {
+    height: 100%;
+    width: 250px;
+    margin-left: 50px;
+  }
+  &__text {
+    margin-top: 40px;
+  }
+  &__a {
+    color: black;
+  }
+  &__call {
+    margin-top: 40px;
+    margin-right: 50px;
+  }
+  &__Write {
+    margin-top: 40px;
+    margin-right: 50px;
+  }
+
+  &__box-button {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+  }
+  &__box-button-box {
+    display: flex;
+  }
+}
+
+.card {
+  &__business {
+    display: flex;
+    width: 800px;
+    height: 400px;
+    margin-left: 400px;
+    margin-top: 100px;
+    position: absolute;
+    background-color: white;
+  }
+  &__profile {
+    display: flex;
+    background-color: rgb(235, 224, 202);
+    height: 350px;
+    width: 400px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__img {
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    margin-top: 40px;
+  }
+  &__box-img {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  &__name {
+    width: 100%;
+    text-align: center;
+  }
+  &__hr {
+    background-color: blue;
+    height: 5px;
+    width: 100px;
+    border: 0;
+  }
+  &__box-hr {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &__box-u {
+    height: 100%;
+    width: 400px;
+    box-shadow: -8px 6px 20px black;
+  }
+  &__box-button {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 400px;
+  }
+  &__button-instagram {
+    background-image: url(/src/logotip_instagram_vtyznosn9smg_64.png);
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 0;
+    left: 100%;
+    cursor: pointer;
+    border-radius: 3%;
+    display: flex;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  &__button-fb {
+    background-image: url(/src/icons8-facebook-24.png);
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+    border-radius: 3%;
+    display: flex;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  &__button-twitter {
+    background-image: url(/src/icons8-твиттер-50.png);
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+    border-radius: 3%;
+    display: flex;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  &__button-in {
+    background-image: url(/src/icons8-линкедин-50.png);
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+    border-radius: 3%;
+    display: flex;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  &__hello {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 400px;
+    background-color: white;
+  }
+  &__hello-p {
+    font-size: 70px;
+    font-weight: 900;
+    margin-bottom: 25px;
+  }
+  &__hello-box-t {
+    margin-bottom: 40px;
+  }
+  &__hello-box-button-RESUME {
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    width: 125px;
+    height: 30px;
+    border: 0;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+  &__hello-box-button-PROJECTS {
+    background-color: white;
+    border-radius: 20px;
+    width: 125px;
+    height: 30px;
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+  &__hello-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+}
