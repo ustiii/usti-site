@@ -1,6 +1,6 @@
-.body {
+body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 * {
   font-family: "Space Grotesk", sans-serif;
@@ -12,6 +12,7 @@
     display: flex;
     height: 150px;
     background-color: white;
+    margin-top: 0px;
   }
   &__block {
     background-color: blue;
@@ -34,10 +35,6 @@
   &__profession {
     margin-left: 15px;
   }
-  &__button-me {
-    color: blue;
-    text-decoration: none;
-  }
   &__button {
     display: flex;
     height: 100%;
@@ -50,6 +47,9 @@
     color: black;
     margin-left: 20px;
     margin-right: 20px;
+    &:focus {
+      color: blue;
+    }
   }
 }
 .site {
@@ -57,12 +57,16 @@
     display: flex;
     width: 100%;
     height: 100%;
+    justify-content: center;
+    align-items: center;
   }
   &__block-color {
+    position: absolute;
     display: flex;
-    height: 600px;
+    height: 100%;
     width: 40%;
     background-color: rgb(238, 211, 162);
+    left: 0;
   }
 }
 
@@ -72,7 +76,7 @@
     height: 150px;
     width: 100%;
     justify-content: center;
-    // background-color: red;
+    margin-bottom: 0px;
   }
   &__age {
     height: 100%;
@@ -89,7 +93,11 @@
     margin-top: 40px;
     margin-right: 50px;
   }
-  &__Write {
+  &__write {
+    margin-top: 40px;
+    margin-right: 50px;
+  }
+  &__follow {
     margin-top: 40px;
     margin-right: 50px;
   }
@@ -100,18 +108,83 @@
     width: 100%;
     height: 100%;
   }
-  &__box-button-box {
+  &__call-name,
+  &__write-name,
+  &__follow-name {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__box-social-networks {
     display: flex;
+    justify-content: center;
+    height: 25px;
+    width: 200px;
+    align-items: center;
   }
 }
 
 .card {
+  &__social-networks-instagram {
+    background-image: url(/src/logotip_instagram_vtyznosn9smg_64.png);
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 0;
+    left: 100%;
+    cursor: pointer;
+    border-radius: 3%;
+    display: flex;
+    background-color: transparent;
+    margin-left: 15px;
+  }
+  &__social-networks-in {
+    background-image: url(/src/icons8-линкедин-50.png);
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 0;
+    left: 100%;
+    cursor: pointer;
+    border-radius: 3%;
+    display: flex;
+    background-color: transparent;
+    margin-left: 15px;
+  }
+  &__social-networks-twiter {
+    background-image: url(/src/icons8-твиттер-50.png);
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 0;
+    left: 100%;
+    cursor: pointer;
+    border-radius: 3%;
+    display: flex;
+    background-color: transparent;
+    margin-left: 15px;
+  }
+  &__social-networks-fb {
+    background-image: url(/src/icons8-facebook-24.png);
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 0;
+    left: 100%;
+    cursor: pointer;
+    border-radius: 3%;
+    display: flex;
+    background-color: transparent;
+    margin-left: 15px;
+  }
   &__business {
     display: flex;
     width: 800px;
     height: 400px;
-    margin-left: 400px;
-    margin-top: 100px;
     position: absolute;
     background-color: white;
   }
@@ -138,6 +211,7 @@
   &__name {
     width: 100%;
     text-align: center;
+    font-size: 1.9em;
   }
   &__hr {
     background-color: blue;
@@ -150,73 +224,17 @@
     display: flex;
     justify-content: center;
   }
-  &__box-u {
+  &__box-avatar {
     height: 100%;
     width: 400px;
-    box-shadow: -8px 6px 20px black;
+    box-shadow: -12px 9px 20px gray;
   }
   &__box-button {
     display: flex;
     justify-content: center;
     height: 50px;
     width: 400px;
-  }
-  &__button-instagram {
-    background-image: url(/src/logotip_instagram_vtyznosn9smg_64.png);
-    width: 30px;
-    aspect-ratio: 1/1;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border: 0;
-    left: 100%;
-    cursor: pointer;
-    border-radius: 3%;
-    display: flex;
-    background-color: transparent;
-    margin-top: 10px;
-    margin-left: 20px;
-  }
-  &__button-fb {
-    background-image: url(/src/icons8-facebook-24.png);
-    width: 30px;
-    aspect-ratio: 1/1;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border: 0;
-    cursor: pointer;
-    border-radius: 3%;
-    display: flex;
-    background-color: transparent;
-    margin-top: 10px;
-    margin-left: 20px;
-  }
-  &__button-twitter {
-    background-image: url(/src/icons8-твиттер-50.png);
-    width: 30px;
-    aspect-ratio: 1/1;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border: 0;
-    cursor: pointer;
-    border-radius: 3%;
-    display: flex;
-    background-color: transparent;
-    margin-top: 10px;
-    margin-left: 20px;
-  }
-  &__button-in {
-    background-image: url(/src/icons8-линкедин-50.png);
-    width: 30px;
-    aspect-ratio: 1/1;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border: 0;
-    cursor: pointer;
-    border-radius: 3%;
-    display: flex;
-    background-color: transparent;
-    margin-top: 10px;
-    margin-left: 20px;
+    align-items: center;
   }
   &__hello {
     display: flex;
@@ -234,24 +252,33 @@
   &__hello-box-t {
     margin-bottom: 40px;
   }
-  &__hello-box-button-RESUME {
-    background-color: blue;
-    color: white;
-    border-radius: 20px;
-    width: 125px;
-    height: 30px;
-    border: 0;
-    margin-right: 10px;
-    margin-bottom: 25px;
-    cursor: pointer;
-  }
-  &__hello-box-button-PROJECTS {
+  &__hello-box-button-resume {
     background-color: white;
     border-radius: 20px;
     width: 125px;
     height: 30px;
     margin-bottom: 25px;
     cursor: pointer;
+    cursor: pointer;
+    &:focus {
+      color: white;
+      background: blue;
+    }
+  }
+  &__hello-box-button-projects {
+    background-color: white;
+    border-radius: 20px;
+    width: 125px;
+    height: 30px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    &:focus {
+      color: white;
+      background: blue;
+    }
+  }
+  &__profession {
+    font-size: 1.4em;
   }
   &__hello-text {
     padding-left: 10px;
